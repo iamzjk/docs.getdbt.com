@@ -26,7 +26,7 @@ Here's an example of how to use `this` in `dbt_project.yml` to grant select righ
 ```yaml
 models:
   project-name:
-    +post-hook:
+    post-hook:
       - "grant select on {{ this }} to db_reader"
 ```
 
